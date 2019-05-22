@@ -1,0 +1,48 @@
+#carousel {
+    position: relative;
+    width: 590px;
+    height: 470px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagecontrol {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -20px;
+    width: 28px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    color: hsla(0, 0%, 100%, .4);
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background-color .2s ease;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.previous {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.carousel-list li {
+    width: 590px;
+    float: left;
+    position: absolute;
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
