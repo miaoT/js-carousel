@@ -30,7 +30,8 @@ The parameter is the `id` of div in line 8, which designs for the carousel.
 ```
 
 ### Description	
-This JavaScript plugin consists of three main parts, `_getDom` getting DOM objects, `_setStyles` setting the custom styles and `_setEvent` setting trigger events.  
+This JavaScript plugin defines three main parts in its `.prototype`, `_getDom` getting DOM objects, `_setStyles` setting the custom styles and `_setEvent` setting trigger events.  
+Apart from that, here are some notes for myself during developing.
   
 　  
   
@@ -57,7 +58,7 @@ for (var i = 0; i < liNodes.length; i++) {
     }
 ```	
 
-c) Considering its expandability, set `self.liList.length` instead of the actual number of images, in this case : [7].
+c) Considering its expandability, set `self.liList.length` instead of the actual number of images, in this case : (7).
 
 ``` diff
 + if (index >= (self.liList.length - 1)) {...}
